@@ -1,0 +1,20 @@
+input.onButtonPressed(Button.A, function () {
+    basic.showIcon(IconNames.Heart)
+    basic.setLedColor(0x0000ff)
+    basic.pause(500)
+})
+input.onButtonPressed(Button.B, function () {
+    basic.showIcon(IconNames.Skull)
+    basic.setLedColor(0xff0000)
+    basic.pause(500)
+})
+basic.forever(function () {
+    basic.showString("A")
+    basic.setLedColor(0x0000ff)
+    basic.showIcon(IconNames.ArrowWest)
+    basic.pause(500)
+    basic.showString("B")
+    basic.setLedColor(0xff0000)
+    basic.showIcon(IconNames.ArrowEast)
+    basic.pause(500)
+})
